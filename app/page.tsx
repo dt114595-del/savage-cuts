@@ -47,7 +47,7 @@ export default function HomePage() {
           </p>
 
           <div className="grid grid-cols-2 gap-4">
-            {["cut1.png", "cut2.png", "cut3.png", "corte4.png"].map(
+            {["cut1.png", "cut2.png", "cut3.png", "cut4.png"].map(
               (img, i) => (
                 <div
                   key={i}
