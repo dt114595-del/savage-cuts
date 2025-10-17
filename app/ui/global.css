@@ -1,0 +1,93 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+/* ==== Estilo tipo Savage Cuts refinado ==== */
+
+:root {
+  --background: #0e0e0e;
+  --foreground: #ffffff;
+  --accent: #e6e2db; /* dorado suave */
+}
+
+/* === Reseteo general === */
+* {
+  box-sizing: border-box;
+  scroll-behavior: smooth;
+}
+
+body {
+  margin: 0;
+  padding: 0;
+  font-family: 'Poppins', sans-serif;
+  background-color: var(--background);
+  color: var(--foreground);
+  overflow-x: hidden;
+}
+
+/* === Encabezados === */
+h1, h2, h3, h4, h5 {
+  font-family: 'Oswald', sans-serif;
+  text-transform: uppercase;
+  letter-spacing: 1px;
+}
+
+/* === Botones === */
+button, .btn {
+  background-color: var(--accent);
+  color: #000;
+  font-weight: 600;
+  border-radius: 8px;
+  padding: 10px 22px;
+  font-size: 0.9rem;
+  transition: all 0.3s ease;
+  text-transform: uppercase;
+  letter-spacing: 0.5px;
+}
+
+button:hover, .btn:hover {
+  background-color: #a57e45;
+  transform: translateY(-1px);
+}
+
+/* === Inputs === */
+input[type='number'] {
+  -moz-appearance: textfield;
+  appearance: textfield;
+}
+
+input[type='number']::-webkit-inner-spin-button,
+input[type='number']::-webkit-outer-spin-button {
+  -webkit-appearance: none;
+  margin: 0;
+}
+
+/* === Tarjetas e imágenes === */
+.card {
+  background: #1b1b1b;
+  border: 1px solid #2a2a2a;
+  border-radius: 10px;
+  padding: 1rem;
+  transition: transform 0.3s ease, box-shadow 0.3s ease;
+}
+
+.card:hover {
+  transform: translateY(-5px);
+  box-shadow: 0 5px 15px rgba(197, 157, 95, 0.15);
+}
+
+/* === Textarea === */
+textarea {
+  resize: none;
+}
+
+/* === Mejoras visuales === */
+::selection {
+  background-color: var(--accent);
+  color: black;
+}
+
+/* === Márgenes globales === */
+section {
+  scroll-margin-top: 80px;
+}
